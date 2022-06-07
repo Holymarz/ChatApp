@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+.container {
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+span {
+  display: inline-block;
+}
+
+.design-box--one {
+  width: 60%;
+  height: 60%;
+  border-bottom-right-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: -30px;
+  background-color: hsl(276deg, 55%, 52%);
+  z-index: -1;
+}
+
+.design-box--two {
+  width: 60%;
+  height: 60%;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 100%;
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+  background-color: hsl(270deg, 20%, 96%);
+  z-index: -1;
+}
+
+header {
+  padding: 5em 0;
+}
+header .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4em;
+  height: 100%;
+}
+header .hero .hero-mobile {
+  border-radius: 30px;
+  padding: 1em;
+  background-color: hsl(0deg, 0%, 100%);
+  position: relative;
+  max-width: 300px;
+  -webkit-box-shadow: 7px 7px 10px lightgray;
+          box-shadow: 7px 7px 10px lightgray;
+}
+header .hero .hero-mobile .mobile-screen {
+  border-radius: 30px;
+  background-color: hsl(270deg, 20%, 96%);
+}
+header .hero .hero-mobile .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.7em;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background: -webkit-gradient(linear, left top, right top, from(hsl(264deg, 100%, 61%)), to(hsl(293deg, 100%, 63%)));
+  background: linear-gradient(0.25turn, hsl(264deg, 100%, 61%), hsl(293deg, 100%, 63%));
+}
+header .hero .hero-mobile .contact .blank {
+  width: 50%;
+  padding: 0.8em;
+  -webkit-transform: translate(0, -0.5em);
+          transform: translate(0, -0.5em);
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 80px;
+}
+header .hero .hero-mobile .contact .contact-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.7em;
+  font-size: 0.7rem;
+  margin: 0 1em;
+}
+header .hero .hero-mobile .contact .contact-wrap .contact-box--one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.7em;
+}
+header .hero .hero-mobile .contact .contact-wrap .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0;
+  width: 10%;
+  height: 10vh;
+}
+header .hero .hero-mobile .contact .contact-wrap .arrow span {
+  width: 0.7em;
+  height: 2px;
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+  position: relative;
+  background-color: hsl(0deg, 0%, 100%);
+}
+header .hero .hero-mobile .contact .contact-wrap .arrow span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  -webkit-transform: rotate(100deg);
+          transform: rotate(100deg);
+  width: 0.7em;
+  height: 2px;
+  top: -3px;
+  left: 4px;
+  bottom: 0;
+  background-color: hsl(0deg, 0%, 100%);
+}
+header .hero .hero-mobile .contact .contact-wrap .contact-img {
+  width: 15%;
+  border-radius: 100%;
+  outline: 1px solid hsl(0deg, 0%, 100%);
+}
+header .hero .hero-mobile .contact .contact-wrap .contact-person .contact-name {
+  color: hsl(270deg, 20%, 96%);
+}
+header .hero .hero-mobile .contact .contact-wrap .contact-person .contact-sub {
+  font-size: 0.6rem;
+  color: hsl(276deg, 100%, 81%);
+}
+header .hero .hero-mobile .contact .contact-wrap .dots span {
+  position: relative;
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  background-color: hsl(0deg, 0%, 100%);
+}
+header .hero .hero-mobile .contact .contact-wrap .dots span::before, header .hero .hero-mobile .contact .contact-wrap .dots span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  background-color: hsl(0deg, 0%, 100%);
+}
+header .hero .hero-mobile .contact .contact-wrap .dots span::before {
+  top: 7px;
+}
+header .hero .hero-mobile .contact .contact-wrap .dots span::after {
+  top: -7px;
+}
+header .hero .hero-mobile .messages-screen {
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
+  font-size: 0.5rem;
+}
+header .hero .hero-mobile .messages-screen .box-one {
+  grid-area: one;
+  align-self: flex-start;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 1em;
+}
+header .hero .hero-mobile .messages-screen .box-one .message-bubble {
+  padding: 0.8em;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: hsl(271deg, 56%, 91%);
+  color: hsl(276deg, 55%, 52%);
+}
+header .hero .hero-mobile .messages-screen .box-two {
+  grid-area: two;
+  align-self: flex-end;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 1em;
+}
+header .hero .hero-mobile .messages-screen .box-two .sent-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0;
+}
+header .hero .hero-mobile .messages-screen .box-two .sent-wrap img {
+  width: 29%;
+  max-width: 60px;
+  border-radius: 10px;
+}
+header .hero .hero-mobile .messages-screen .box-two .message-bubble {
+  padding: 0.8em;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(271deg, 15%, 43%);
+  -webkit-box-shadow: 1px 3px 10px lightgray;
+          box-shadow: 1px 3px 10px lightgray;
+}
+header .hero .hero-mobile .messages-screen .box-three {
+  grid-area: three;
+  align-self: flex-start;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  gap: 1em;
+}
+header .hero .hero-mobile .messages-screen .box-three .message-bubble {
+  width: 75%;
+  padding: 0.8em;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: hsl(271deg, 56%, 91%);
+  color: hsl(276deg, 55%, 52%);
+}
+header .hero .hero-mobile .messages-screen .box-three .message-bubble--dark {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0;
+  padding: 0.8em;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: none;
+  color: hsl(0deg, 0%, 100%);
+  background: -webkit-gradient(linear, left top, right top, from(hsl(293deg, 100%, 63%)), to(hsl(264deg, 100%, 61%)));
+  background: linear-gradient(0.25turn, hsl(293deg, 100%, 63%), hsl(264deg, 100%, 61%));
+}
+header .hero .hero-mobile .messages-screen .box-three .message-bubble--dark div {
+  opacity: 0.4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+}
+header .hero .hero-mobile .messages-screen .box-three .message-bubble--dark div .circle {
+  border: 1px solid hsl(0deg, 0%, 100%);
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 100%;
+}
+header .hero .hero-mobile .messages-screen .box-three .message-bubble--dark .price {
+  font-size: 0.8rem;
+}
+header .hero .hero-mobile .messages-screen .box-five {
+  width: 100%;
+  grid-area: five;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0;
+  padding: 0.8em;
+  border-radius: 100px;
+  font-weight: 500;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(271deg, 15%, 43%);
+}
+header .hero .hero-mobile .messages-screen .box-five .enter {
+  margin-left: 2em;
+  justify-self: flex-start;
+  opacity: 0.4;
+  font-size: 0.65rem;
+}
+header .hero .hero-mobile .messages-screen .box-five .send-circle {
+  position: relative;
+  padding: 0.8em;
+  border-radius: 100%;
+  width: 3em;
+  height: 3em;
+  background-color: hsl(271deg, 36%, 24%);
+}
+header .hero .hero-mobile .messages-screen .box-five .send-circle .arrow {
+  position: absolute;
+  width: 1em;
+  height: 2px;
+  top: 14px;
+  right: 7px;
+  -webkit-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+  border-radius: 100px;
+  background-color: hsl(0deg, 0%, 100%);
+}
+header .hero .hero-mobile .messages-screen .box-five .send-circle .arrow::after {
+  content: "";
+  position: absolute;
+  display: block;
+  -webkit-transform: rotate(100deg);
+          transform: rotate(100deg);
+  width: 1em;
+  height: 2px;
+  top: -4px;
+  left: 4px;
+  bottom: 0;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 100px;
+}
+header .hero .hero-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+  text-align: center;
+}
+header .hero .hero-content .hero-title {
+  font-size: 2rem;
+  color: hsl(271deg, 36%, 24%);
+}
+header .hero .hero-content .hero-info {
+  color: hsl(270deg, 7%, 64%);
+}
+
+@media (min-width: 700px) {
+  .design-box--one {
+    width: 60%;
+    height: 60%;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    left: -80px;
+  }
+
+  .design-box--two {
+    width: 60%;
+    height: 60%;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 100%;
+    right: -80px;
+  }
+
+  header .hero .hero-content {
+    max-width: 650px;
+  }
+}
+@media (min-width: 1000px) {
+  .design-box--one {
+    width: 37%;
+    height: 92%;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    left: -160px;
+  }
+
+  .design-box--two {
+    width: 37%;
+    height: 82%;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 100%;
+    right: -160px;
+  }
+
+  header {
+    padding: 8em 0;
+  }
+  header .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 6em;
+  }
+  header .hero .hero-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    gap: 1.5em;
+    width: 40%;
+    max-width: unset;
+    text-align: start;
+  }
+}
